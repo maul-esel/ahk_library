@@ -1,5 +1,5 @@
-#include <lib_STRING>
-#include <lib_MATH>
+#include lib_STRING.ahk
+#include lib_MATH.ahk
 
 ; Universal basic functions that should be accessible anywhere
 class Core {
