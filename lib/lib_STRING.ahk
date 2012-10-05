@@ -11,11 +11,11 @@ class String {
     }
 
     ; specialize the "in" function from the OBJ library
-    in( hs ){
+    in( hs, case = false ){
         if ( isObject(hs)){
-            return Obj.in(hs, this)
+            return Obj.in(hs, this, case)
         }
-        return instr(hs, this)
+        return instr(hs, this, case)
     }
 
     ; Returns an array of substrings, split when delimiters are found
