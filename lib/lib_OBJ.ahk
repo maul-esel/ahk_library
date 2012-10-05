@@ -12,10 +12,10 @@ class OBJ {
 	}
 
 	; Returns the (first) position of an element in an array or object
-	in( arr, val ){
+	in( arr, val, case = false ){
 		if (isobject(arr)){
 			for k, v in arr {
-				if ( v == val ){
+				if ( (case && v == val) || (!case && v = val) ){
 					return A_index
 				}
 			}
